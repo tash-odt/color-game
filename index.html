@@ -9,36 +9,41 @@
 </head>
 <body>
     <header class="gameTitle">
-        <h1 data-testid="game-title">Colour Guessing Game</h1>
+        <h1 data-testid="game_title">Colour Guessing Game</h1>
     </header>
     <hr>
     <div class="gameWelcome">
         <h3 data-testid="welcome-message">🎨 Welcome to the Colour Guessing Game!</h3>
         <ul>
-            <li data-testid="instruction-1">Click on a colour box to guess the target colour.</li>
-            <li data-testid="instruction-2">Match the target colour to earn points.</li>
-            <li data-testid="instruction-3">Challenge yourself to get the highest score! 🚀🎯</li>
+            <li data-testid="instruction_1">Click on a colour box to guess the target colour.</li>
+            <li data-testid="instruction_2">Match the target colour to earn points.</li>
+            <li data-testid="instruction_3">Challenge yourself to get the highest score! 🚀🎯</li>
         </ul>
     </div>
 
     <div class="targetBoxContainer">
-        <div id="targetBox" data-testid="target-box"></div>
-        <p id="output" data-testid="game-status">Pick the correct color!</p>
+        <div id="targetBox" data-testid="colorBox"></div>
+        <p id="displayMessage" data-testid="gameInstructions">Guess the correct colour!</p>
+        <div class="output">
+           <p id="output" data-testid="gameStatus">Guess...</p>
+        </p> 
+        </div>
+        
     </div>
 
-    <div class="guessBoxContainer" id="guessBoxContainer" data-testid="guess-box-container">
-        <div class="guessBox" id="box1" data-testid="guess-box-1"></div>
-        <div class="guessBox" id="box2" data-testid="guess-box-2"></div>
-        <div class="guessBox" id="box3" data-testid="guess-box-3"></div>
-        <div class="guessBox" id="box4" data-testid="guess-box-4"></div>
-        <div class="guessBox" id="box5" data-testid="guess-box-5"></div>
-        <div class="guessBox" id="box6" data-testid="guess-box-6"></div>
+    <div class="guessBoxContainer" id="guessBoxContainer" data-testid="guessBoxContainer">
+        <div class="guessBox" id="box1" data-testid="colorOption_1"></div>
+        <div class="guessBox" id="box2" data-testid="colorOption_2"></div>
+        <div class="guessBox" id="box3" data-testid="colorOption_3"></div>
+        <div class="guessBox" id="box4" data-testid="colorOption_4"></div>
+        <div class="guessBox" id="box5" data-testid="colorOption_5"></div>
+        <div class="guessBox" id="box6" data-testid="colorOption_6"></div>
     </div>
 
-    <div id="score" data-testid="score-display">Score: 0</div>
+    <div id="score" data-testid="score">Score: 0</div>
 
     <div class="newGameButton">
-        <button id="newGameButton" data-testid="new-game-button">New Game</button>
+        <button id="newGameButton" data-testid="newGameButton">New Game</button>
     </div>
 </body>
 </html>

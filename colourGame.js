@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Change colors after every guess
       shuffleColors();
       setTimeout(() => {
-        output.innerHTML = "Pick the correct color!";
+        output.innerHTML = "Guess...";
       }, 500); // sets a 0.5s timer to chnage output to "Pick the correct color!"
   }
 
